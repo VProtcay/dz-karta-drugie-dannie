@@ -12,7 +12,7 @@ install:
 
 build_script:
   - ps: chmod +x gradlew
-  - ps: ./gradlew test --info "-Dselenide.headless=true"
+  - ps: ./gradlew test --info "-Dselenide.headless"
 
 on_finish:
   - ps: Stop-Process -Id $App.Id
