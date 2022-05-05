@@ -2,9 +2,9 @@ package ru.netology.data;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import lombok.Value;
 
-import java.time.LocalDate;
-
+@Value
 @Data
 @RequiredArgsConstructor
     public class OrderFormData {
@@ -13,6 +13,5 @@ import java.time.LocalDate;
         private String phone;
 
 
-    public OrderFormData(String cityName, String s, String s1) {
-    }
+
 }
